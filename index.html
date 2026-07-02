@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Solo Upgrade</title>
 
 <style>
@@ -14,11 +15,12 @@ body {
   overflow-x: hidden;
 }
 
-/* NAVBAR */
+/* ===== NAVBAR ===== */
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 20px 40px;
+  align-items: center;
+  padding: 18px 40px;
   background: rgba(10, 10, 30, 0.85);
   border-bottom: 1px solid #2b2f55;
 }
@@ -33,13 +35,14 @@ body {
   color: #c7d2fe;
   margin-left: 20px;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .links a:hover {
   color: #60a5fa;
 }
 
-/* HERO */
+/* ===== HERO ===== */
 .hero {
   text-align: center;
   padding: 140px 20px;
@@ -50,15 +53,18 @@ body {
   background: linear-gradient(90deg, #60a5fa, #a855f7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
 }
 
 .hero p {
   color: #aab4ff;
-  max-width: 600px;
+  max-width: 650px;
   margin: auto;
   font-size: 18px;
+  line-height: 1.6;
 }
 
+/* BUTTON */
 .btn {
   display: inline-block;
   margin-top: 25px;
@@ -68,15 +74,21 @@ body {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  box-shadow: 0 0 20px rgba(59,130,246,0.4);
+  transition: 0.3s;
 }
 
-/* CARDS */
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* ===== FEATURES ===== */
 .section {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-  padding: 60px;
+  padding: 60px 20px;
 }
 
 .card {
@@ -85,13 +97,21 @@ body {
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(99,102,241,0.3);
   border-radius: 14px;
+  backdrop-filter: blur(8px);
+  transition: 0.3s;
 }
 
-/* FOOTER */
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #60a5fa;
+}
+
+/* ===== FOOTER ===== */
 footer {
   text-align: center;
   padding: 40px;
   color: #666;
+  border-top: 1px solid #1a1a2e;
 }
 </style>
 
@@ -99,6 +119,7 @@ footer {
 
 <body>
 
+<!-- NAVBAR -->
 <div class="navbar">
   <div class="logo">⚔ SOLO UPGRADE</div>
 
@@ -106,26 +127,44 @@ footer {
     <a href="/">Home</a>
     <a href="/privacy/">Privacy</a>
     <a href="/terms/">Terms</a>
+    <a href="https://discord.gg/NCNstFVwKG" target="_blank">Discord</a>
   </div>
 </div>
 
+<!-- HERO -->
 <div class="hero">
   <h1>AWAKEN YOUR POWER</h1>
-  <p>A Discord RPG where Hunters grow stronger through battles, Gates, and evolution.</p>
+
+  <p>
+    Enter a world of Gates, Hunters, and endless progression.
+    Rise from weak to unstoppable.
+  </p>
 
   <a class="btn" href="https://discord.gg/NCNstFVwKG">
     Enter the Gate
   </a>
 </div>
 
+<!-- FEATURES -->
 <div class="section">
-  <div class="card">⚔ Fight monsters & gain XP</div>
-  <div class="card">🌌 Explore dangerous Gates</div>
-  <div class="card">📈 Rank up from E → EX</div>
+
+  <div class="card">
+    ⚔ Fight monsters and gain XP
+  </div>
+
+  <div class="card">
+    🌌 Explore dangerous Gates
+  </div>
+
+  <div class="card">
+    📈 Rank up from E → EX
+  </div>
+
 </div>
 
+<!-- FOOTER -->
 <footer>
-© Solo Upgrade — Discord RPG Experience
+  © Solo Upgrade — Discord RPG Experience
 </footer>
 
 </body>
